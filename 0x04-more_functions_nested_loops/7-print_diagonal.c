@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_square - prints hashes squares.
- * @size: size of the square.
+ * print_diagonal - prints hashes squares.
+ * @n: number of the diagonals.
  * Return: no return.
  */
 void print_diagonal(int n)
