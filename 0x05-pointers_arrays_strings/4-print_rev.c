@@ -1,21 +1,22 @@
 #include "main.h"
 
 /**
- * rev_string - Reverses a string.
- * @s: string to be reserved.
+ * print_rev - prints a string, in reverse, followed by a new line.
+ * @s: input string.
+ * Return: no return.
  */
-void rev_string(char *s)
+void print_rev(char *s)
 {
-	int i = 0, len = 0;
-	char tmp;
+	int count = 0;
 
-	while (s[i++])
-		len++;
-
-	for (i = len - 1; i >= len / 2; i--)
+	while (count >= 0)
 	{
-		tmp = s[i];
-		s[i] = s[len - i - 1];
-		s[len - i - 1] = tmp;
+		if (s[count] == '\0')
+			break;
+		count++;
 	}
+
+	for (count--; count >= 0; count--)
+		_putchar(s[count]);
+	_putchar('\n');
 }
