@@ -6,6 +6,7 @@
  *
  * Return: char with result
  */
+
 char *_strstr(char *haystack, char *needle)
 {
 	int count = 0, a = 0, k, j = 0, l, i = 0;
